@@ -1,0 +1,19 @@
+/************************************************************
+************************************************************/
+■【Unity】備忘録#7　Planeに表示させた画像(Texture)を上下・左右反転させる方法
+	http://rikoubou.hatenablog.com/entry/2016/02/06/231048
+	
+	contents
+		// 対象のオブジェクトを取得
+		GameObject obj = GameObject.Find("Plane");
+		
+		// オブジェクトのスケールを取得
+		Vector3 scale = obj.transform.localScale;
+		
+		// ここではx軸をマイナスにしている 
+		scale.x = -scale.x;
+		
+		// スケールを再設定
+		obj.transform.localScale = scale;
+	
+	
